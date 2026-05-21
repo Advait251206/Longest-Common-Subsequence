@@ -54,19 +54,21 @@ flowchart TD
     classDef base fill:#E3F2FD,stroke:#1565C0,stroke-width:2px,color:#0D47A1;
     classDef formula fill:#EDE7F6,stroke:#6A1B9A,stroke-width:2px,color:#4A148C;
 
-    A[🔍 Check characters at text1[i-1] and text2[j-1]] --> B{Is text1[i-1] == text2[j-1] ?}
+    A["🔍 Check characters at text1[i-1] and text2[j-1]"] --> B{"Is text1[i-1] == text2[j-1]?"}
     
     B -->|✅ Match| C[Diagonal Transition]
-    C --> D["dp[i][j] = dp[i-1][j-1] + 1"]:::match
+    C --> D["dp[i][j] = dp[i-1][j-1] + 1"]
     
     B -->|❌ Mismatch| E[Maximum Adjacent Neighbours]
-    E --> F["dp[i][j] = max(dp[i-1][j], dp[i][j-1])"]:::mismatch
+    E --> F["dp[i][j] = max(dp[i-1][j], dp[i][j-1])"]
 
-    D --> G[🏁 Final Answer at dp[m][n]]
+    D --> G["🏁 Final Answer at dp[m][n]"]
     F --> G
 
     class A,B formula;
     class G base;
+    class D match;
+    class F mismatch;
 ```
 
 ---
