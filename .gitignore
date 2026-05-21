@@ -1,0 +1,43 @@
+# Prerequisites
+*.d
+
+# Object files
+*.o
+*.obj
+*.ko
+*.so
+*.gch
+
+# Precompiled Headers
+*.pch
+
+# Libraries
+*.lib
+*.a
+*.la
+*.lo
+
+# Shared objects (metadata)
+*.dll
+*.dylib
+
+# Executables
+*.exe
+*.out
+*.app
+*.i*86
+*.x86_64
+*.hex
+
+# Debugging symbols
+*.dSYM/
+*.su
+*.idb
+*.pdb
+
+# Local developer files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.log
